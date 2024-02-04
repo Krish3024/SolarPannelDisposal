@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>SunTech.com</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/628fde244b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/628fde244b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <style>
+        .glass-content {
+            margin-top: 0%;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        body {
+            background-color: #8098A9;
+            color: white;
+            font-weight: 500;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .glass-content {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .call-to-action {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+
+    <nav class="navbar navbar-expand-lg bg-dark bg-transparent" style="margin-bottom: 1.2cm;">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">SunTech.com</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav" style="margin-left:29%;">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="/userLanding">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/adminLogin">Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Complaints
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: rgba(255, 255, 255, 0.2)">
+                            <li><a class="dropdown-item text-white" href="/complaints">Lodge a complaint</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Check status</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item bg-transparent">
+                        <i class="fa-solid fa-coins p-2 " style="margin-right: 2cm;"><span
+                                style="margin-left: 0.5rem;">₹ 100</span></i>
+                    </li>
+                    <li class="nav-item bg-transparent">
+                        <a class="btn btn-outline-danger btn-md " href="/logout" role="button">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="row">
+            <div class="col col-sm-8">
+                <div class="">
+                    <h2>Welcome to SunTech</h2>
+                    <p>
+                        We are dedicated to the responsible disposal and recycling of solar panel components. Our
+                        mission is
+                        to provide a sustainable solution for end-of-life solar panels while promoting environmental
+                        stewardship
+                        and rewarding users for their contribution to recycling efforts.
+                    </p>
+                    <div class="call-to-action">
+                        <a class="btn btn-primary btn-lg" href="/complaints" role="button">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-2">
+                <img src="../logo2.png" alt="" style="height: 10cm;border-radius: 10cm;">
+            </div>
+        </div>
+        <div class="row" style="height: 10cm; width:15cm;;">
+
+            <canvas id="myChart" width="400" height="300"></canvas>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const ctx = document.getElementById('myChart').getContext('2d');
+
+            const data = {
+                labels: ['January', 'February', 'March', 'April', 'May', 'jun', 'july', 'aug', 'sept', 'oct', 'nov', 'dec'],
+                datasets: [{
+                    label: 'Monthly Customers',
+                    data: [110, 243, 358, 412, 521, 633, 749, 812, 899, 927, 955, 991
+                    ],
+                    backgroundColor: 'green',
+                    color: "blue",
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 3
+                }]
+            };
+
+            const options = {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            color: 'white' // Change X-axis label text color
+                        }
+                    },
+                    x: {
+                        beginAtZero: true,
+                        ticks: {
+                            color: 'white' // Change X-axis label text color
+                        }
+                    }
+                }, plugins: {
+                    legend: {
+                        labels: {
+                            color: 'white' // Change legend text color
+                        }
+                    }
+                }
+            };
+
+            const myChart = new Chart(ctx, {
+                type: 'bar',
+                data: data,
+                options: options
+            });
+        });
+    </script>
+    <div class="d-flex my-3" style="justify-content: center;">
+
+    <img src="../data.png" alt="" srcset="" style="width:25cm ;border-radius: 1cm;">
+    </div>
+</body>
+
+</html>
